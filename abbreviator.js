@@ -1,6 +1,7 @@
 /**
  *  Created by Matt Bricker-Mounts
  *  10/6/2014
+ *  v. 0.1
  */ 
 
 // {state, abbreviation}
@@ -20,7 +21,7 @@ var states = {
 	'Georgia': 'GA',
 	'Hawaii': 'HI',
 	'Hawai\'i': 'HI',
-	'Idaho': 'ID'
+	'Idaho': 'ID',
     'Illinois': 'IL',
     'Indiana': 'IN',
     'Iowa': 'IA',
