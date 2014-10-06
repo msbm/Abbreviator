@@ -66,5 +66,6 @@ function stateToAbbr(s) {
             return states[k];
         }
     }
+    // If there is no abbreviaiton for the state, just return the full state name
     return s;
 }
