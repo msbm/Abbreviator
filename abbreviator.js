@@ -1,18 +1,65 @@
 // {state, abbreviation}
-var states = [
-	{s: 'Illinois', a: 'IL'},
-	{s: 'Montana', a: 'MT'},
-	{s: 'New Mexico', a: 'NM'},
-	{s: 'Oklahoma', a: 'OK'},
-	{s: 'Texas', a: 'TX'}
-];
+var states = {
+	'Alabama': 'AL',
+	'Alaska': 'AK',
+	'Arizona': 'AZ',
+	'California': 'CA',
+	'Colorado': 'CO',
+	'Connecticut': 'CT',
+	'Delaware': 'DE',
+	'Washington, D.C.': 'DC',
+	'Washington, DC': 'DC',
+	'Washington D.C.': 'DC',
+	'Washington DC': 'DC',
+	'Florida': 'FL',
+	'Georgia': 'GA',
+	'Hawaii': 'HI',
+	'Hawai\'i': 'HI',
+	'Idaho': 'ID'
+    'Illinois': 'IL',
+    'Indiana': 'IN',
+    'Iowa': 'IA',
+    'Kansas': 'KS',
+    'Kentucky': 'KY',
+    'Louisiana': 'LA',
+    'Maine': 'ME',
+    'Maryland': 'MD',
+    'Michigan': 'MI',
+    'Minnesota': 'MN',
+    'Mississippi': 'MS',
+    'Missouri': 'MO',
+    'Montana': 'MT',
+    'Nebraska': 'NE',
+    'Nevada': 'NV',
+    'New Hampshire': 'NH',
+    'New Jersey': 'NJ',
+    'New Mexico': 'NM',
+    'New York': 'NY',
+    'North Carolina': 'NC',
+    'North Dakota': 'ND',
+    'Ohio': 'OH',
+    'Oklahoma': 'OK',
+    'Oregon': 'OR',
+    'Pennsylvania': 'PA',
+    'Rhode Island': 'RI',
+    'South Carolina': 'SC',
+    'South Dakota': 'SD',
+    'Tennessee': 'TN',
+    'Texas': 'TX',
+    'Utah': 'UT',
+    'Vermont': 'VT',
+    'Virginia': 'VA',
+    'Washington': 'WA',
+    'West Virginia': 'WV',
+    'Wisconsin': 'WI',
+    'Wyoming': 'WY'
+};
 
 function stateToAbbr(s) {
-	for (var i = 0; i < states.length; i++) {
-        state = states[i];
-		if(s.toLowerCase() == state.s.toLowerCase()) {
-			return state.a;
-		}
-	}
-	return s;
+    for (k in states) {
+        if(s.toLowerCase() == k.toLowerCase()) {
+            return states[k];
+        }
+    }
+    return s;
 }
