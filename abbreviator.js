@@ -69,3 +69,12 @@ function stateToAbbr(s) {
     // If there is no abbreviaiton for the state, just return the full state name
     return s;
 }
+
+function abbrToState(a) {
+    for (k in states) {
+        if (a.toUpperCase() == states[k]) {
+            return k;
+        }
+    }
+    return a;
+}
