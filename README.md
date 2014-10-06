@@ -1,6 +1,6 @@
 Abbreviator
 ===========
 
-stateToAbbr(state)
-  accepts state name
-  returns state abbreviation
+#stateToAbbr(state)
+
+Returns the abbreviation for the specified state
