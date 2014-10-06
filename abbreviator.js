@@ -1,3 +1,8 @@
+/**
+ *  Created by Matt Bricker-Mounts
+ *  10/6/2014
+ */ 
+
 // {state, abbreviation}
 var states = {
 	'Alabama': 'AL',
